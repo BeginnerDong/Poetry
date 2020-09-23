@@ -1,0 +1,107 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",//设置页面标题文字
+				"onReachBottomDistance":100
+			}
+		}
+        ,{
+            "path" : "pages/search/search",
+            "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+        }
+        ,{
+            "path" : "pages/poemsDetail/poemsDetail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/info/info",
+            "style" : {
+				"navigationBarTitleText": "个人信息"
+			}
+        }
+        ,{
+            "path" : "pages/report/report",
+            "style" : {
+				"navigationBarTitleText": "学习报告"
+			}
+        }
+        ,{
+            "path" : "pages/ranking/ranking",
+            "style" : {
+				"navigationBarTitleText": "排行榜"
+			}
+        }
+        ,{
+            "path" : "pages/rankingDetail/rankingDetail",
+            "style" : {
+				"navigationBarTitleText": "排行榜"
+			}
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+        ,{
+            "path" : "pages/collection/collection",
+            "style" : {
+				"navigationBarTitleText": "我的收藏"
+			}
+        }
+        ,{
+            "path" : "pages/task/task",
+            "style" : {
+				"navigationBarTitleText": "我的作业"
+			}
+        }
+        ,{
+            "path" : "pages/creatClass/creatClass",
+            "style" : {
+				"navigationBarTitleText": "创建班级"
+			}
+        }
+        ,{
+            "path" : "pages/public/public",
+            "style" : {
+				"navigationBarTitleText": "发布作业"
+			}
+        }
+        ,{
+            "path" : "pages/message/message",
+            "style" : {
+				"navigationBarTitleText": "留言反馈"
+			}
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" : {
+				"navigationBarTitleText": "留言反馈"
+			}
+        }
+        ,{
+            "path" : "pages/studyReport/studyReport",
+            "style" : {
+				"navigationBarTitleText": "学生学习报告"
+			}
+        }
+    ],
+	"globalStyle": {
+		//"navigationStyle":"custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
